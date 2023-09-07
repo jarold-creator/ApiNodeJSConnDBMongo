@@ -1,0 +1,32 @@
+POST http://localhost:3000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "felipe flores flores",
+    "age": 65,
+    "email": "felipeFlores@hotmail.com"
+}
+
+###
+
+GET http://localhost:3000/api/users HTTP/1.1
+
+###
+
+GET http://localhost:3000/api/users/64f7dcf6ea57f3e661e6ad4a HTTP/1.1
+
+###
+
+PUT  http://localhost:3000/api/users/64f8ad0871d02177d27dcb54 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "felipe flores campos",
+    "age": 45,
+    "email": "felipeFlores@hotmail.com"
+}
+
+###
+
+DELETE   http://localhost:3000/api/users/64f7dc7c29ff794ca49cc274 HTTP/1.1
+Content-Type: application/json
